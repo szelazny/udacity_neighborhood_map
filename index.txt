@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neighborhood Map</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/offline-theme-dark-indicator.css">
+  <link rel="stylesheet" href="css/offline-language-english-indicator.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/offline.min.js"></script>
+  <script>
+    var run = function(){
+     if (Offline.state === 'up')
+       Offline.check();
+   }
+   setInterval(run, 5000);
+ </script>
+
+</head>
+<body>
+  <div class="search-area" id="search-area">
+    <input class="search-input" placeholder="Search for Places..." type="text" name="q" data-bind="value: query, valueUpdate: 'keyup'">
+    <ul class="location-list" data-bind="visible:query, template: {name: 'location', foreach: search}">
+    </ul>
+  </div>
+  <div class="map-canvas" id="map-canvas"></div>
+
+  <script type="text/html" id="location">
+    <li class="location-item" data-bind="text: title, click: openInfowindow"></li>
+  </script>
+  
+  <script>
+    var map;
+    function initialize() {
+      var mapOptions = {
+        zoom: 14,
+        center: new google.maps.LatLng(39.266333, -76.650442),
+        disableDefaultUI: true
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);  
+    }  
+    initialize();
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,5 +1,3 @@
-# udacity_neighborhood_map
-
 ## Udacity Front-end Nonodegree - Project 
 ## Baltimore Neighborhood Map
 

@@ -1,7 +1,7 @@
 # udacity_neighborhood_map
 
-##Udacity Front-end Nonodegree - Project 
-##Baltimore Neighborhood Map
+## Udacity Front-end Nonodegree - Project 
+## Baltimore Neighborhood Map
 
 
 This application is an interactive map of Baltimore, MD with locations that I am interested in marked on the map. When one of the locations are clicked on a popup window will display additional information about that location including the 5 most recent tips from Foursquare.

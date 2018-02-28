@@ -1,0 +1,73 @@
+html,
+body,
+.map-canvas {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.map-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.tips,
+.search-area {
+	font-size: 1.1em;
+}
+
+.search-area {
+	position: absolute;
+	max-height: 100%;
+	overflow: auto;
+	left: 1%;
+	top: 2%;
+	z-index: 2;
+	background-color: #fff;
+	opacity: 0.8;
+}
+
+.location-list {
+	padding: 0;
+	margin: 5px;
+}
+
+.search-input {
+	padding: 10px 20px;
+	font-size: 1.5em;
+}
+
+.location-item {
+	padding: 10px;
+	margin: 0;
+	background-color: #fff;
+	list-style-type: none;
+	text-align: center;
+	border: solid green 1px;
+}
+
+.location-item:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+@media (max-width:600px) {
+	.map-canvas {
+		margin-top: 52px;
+	}
+	
+	.location-list {
+		margin: 0;
+	}
+
+	.search-area,
+	.search-input {
+		width: 100%;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+}

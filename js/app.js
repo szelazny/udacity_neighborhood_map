@@ -73,7 +73,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 		new Location('Weis', 39.261015, -76.69614, '57a4f566498e74340d2dc7f5', 'Shopping'),
 		new Location('Standard Auto Parts', 39.268236, -76.647487, '4be7f6b4947820a1d045b4db', 'Shopping'),
 		new Location('Cloos\' Coney Island', 35.77770, -78.67485, '4afee1fdf964a520333122e3', 'Food'),
-		new Location('Mikes Pizza', 39.251017, -76.693744, '4b92f04bf964a520972834e3', 'Food'),
+		new Location('Mike\'s Pizza', 39.251017, -76.693744, '4b92f04bf964a520972834e3', 'Food'),
 		new Location('Burger King', 39.210098, -76.72342, '4bb114c2f964a520b7783ce3', 'Food'),
 		new Location('Ledo\'s Pizza', 39.270795, -76.601601, '4af3542f964a520a8ec21e3', 'Food'),
 		],

@@ -70,7 +70,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 		new Location('Ace Hardware', 39.2755, -76.612297, '4b2c0331j964a52093bf23e3', 'Shopping'),
 		new Location('Home Depot', 39.248026, -76.674238, '4b2c2021f964a52033c224e3', 'Shopping'),
 		new Location('Giant Food', 39.265803, -76.698629, '4b9970d1f964a520b37b35e3', 'Shopping'),
-		new Location('Weis', 39.261015, -76.69614, '4d615493e4fe5481a8618a9e', 'Shopping'),
+		new Location('Weis', 39.261015, -76.69614, '57a4f566498e74340d2dc7f5', 'Shopping'),
 		new Location('Standard Auto Parts', 39.268236, -76.647487, '4be7f6b4947820a1d045b4db', 'Shopping'),
 		new Location('Cloos\' Coney Island', 35.77770, -78.67485, '4afee1fdf964a520333122e3', 'Food'),
 		new Location('Mikes Pizza', 39.251017, -76.693744, '4b92f04bf964a520972834e3', 'Food'),

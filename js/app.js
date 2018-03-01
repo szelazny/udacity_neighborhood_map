@@ -65,7 +65,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 	var locationsModel = {
 
 		locations:[
-		new Location('Penzeys Spices', 35.78961, -78.66032, '4cdd6918d4ecb1f701298548', 'Shopping'),
+		new Location('Aldi', 39.258251, -76.662604, '4ccf44466200b1f78260cd28', 'Shopping'),
 		new Location('Raleigh Flea Market', 35.79499, -78.70719, '4ad4c00af964a5203ded20e3', 'Shopping'),
 		new Location('Reader\'s Corner', 35.79005, -78.67937, '4adc8051f964a520b92c21e3', 'Shopping'),
 		new Location('State Farmers Market', 35.76363, -78.66274, '4bb8979c3db7b713c965219a', 'Shopping'),

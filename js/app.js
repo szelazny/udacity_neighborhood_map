@@ -7,7 +7,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 	this.venueId = venueId;
 	this.cat = cat;
 
-// getConetent function retrieves 5 most recent tips from foursquare for the marker location.
+// getConetent function retrieves the five most recent tips from foursquare for the marker location.
 	this.getContent = function() {
 		var topTips = [];
 		var venueUrl = 'https://api.foursquare.com/v2/venues/' + self.venueId + '/tips?sort=recent&limit=5&v=20150609&client_id=4EPS21I4V4MVCYXWDT4QNZZG1JETWZ2LIJMYQ34FNBWZ1RMV&client_secret=U3P1XLU204VMYO4BHGIWPDOY130Z1AFTT1OQTI2TY0HW0T43';

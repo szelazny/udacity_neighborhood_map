@@ -73,7 +73,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 		new Location('Watson\'s Market Place & Flea Market', 35.76063, -78.61596, '4d615493e4fe5481a8618a9e', 'Shopping'),
 		new Location('Raleigh Denim', 35.77665, -78.64465, '4c84e24574d7b60ca66196d8', 'Shopping'),
 		new Location('Cloos\' Coney Island', 35.77770, -78.67485, '4afee1fdf964a520333122e3', 'Food'),
-		new Location('Franks Pizza', 35.77880, -78.60704, '4aecb1b2f964a52056ca21e3', 'Food'),
+		new Location('Mikes Pizza', 39.251017, -76.693744, '4b92f04bf964a520972834e3', 'Food'),
 		new Location('Snoopy\'s Hot Dogs & More', 35.80719, -78.62499, '4bf6c03013aed13a6823eaf7', 'Food'),
 		new Location('Clyde Cooper\'s Barbecue', 35.77630, -78.63831, '4b63170ef964a52039622ae3', 'Food'),
 		],

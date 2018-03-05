@@ -10,3 +10,6 @@ How to run
 To run this application download all of the files and open the index.html file. For this application to run properly you must be connected to the internet.
 
 To view the interactive map on github pages go to http://szelazny.github.io/udacity_neighborhood_map
+
+### References
+

@@ -14,6 +14,8 @@ To view the interactive map on github pages go to http://szelazny.github.io/udac
 ### References
 
 http://jquery.com/
-
 http://knockoutjs.com/
+
+https://foursquare.com 
+
 

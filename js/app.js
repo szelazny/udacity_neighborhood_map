@@ -68,13 +68,18 @@ var Location = function(title, lng, lat, venueId, cat) {
     marker.setImage(getIcon(color).image);
 }
 	
-	
+	function highlightMarker2() {
+   
+        color = "#0000FF";
+  
+    marker.setImage(getIcon(color).image);
+}	
 	
 	
 		// Assigns a click event listener to the marker to open the info window.
 		this.addListener = google.maps.event.addListener(self.marker,'click', (this.openInfowindow));
 	        // Assigns a mouseover event listener to the marker t
-		this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {this.highlightMarker(this,"highlight")});
+		this.addListener = google.maps.event.addListener(self.marker,'mouseover', (this.highlightMarker2));
 	       // this.addListener = google.maps.event.addListener(self.marker,'mouseout', highlightMarker(self.marker, unhighlight));
 	};
 

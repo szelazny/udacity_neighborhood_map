@@ -79,7 +79,8 @@ var Location = function(title, lng, lat, venueId, cat) {
                //  this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {dostuff();});
 this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {this.setAnimation(google.maps.Animation.BOUNCE);});
 //this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {this.setAnimation(none);});
-this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {alert('Made it to mouseout!');});
+//this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {alert('Made it to mouseout!');});
+this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {this.setAnimation(google.maps.Animation.none);});
 
 
 	

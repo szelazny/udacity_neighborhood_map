@@ -44,7 +44,8 @@ var Location = function(title, lng, lat, venueId, cat) {
 			position: new google.maps.LatLng(self.lng, self.lat),
 			map: map,
 			title: self.title,
-			icon: self.icon
+			icon: self.icon,
+			animation: google.maps.Animation.DROP
 		});
 
 		// Opens the info window for the location marker.
@@ -59,6 +60,9 @@ var Location = function(title, lng, lat, venueId, cat) {
 
 		// Assigns a click event listener to the marker to open the info window.
 		this.addListener = google.maps.event.addListener(self.marker,'click', (this.openInfowindow));
+	        // Assigns a mouseover event listener to the marker t
+		//this.addListener = google.maps.event.addListener(self.marker,'mouseover', (this.setIcon(highlightedIcon)));
+	        //this.addListener = google.maps.event.addListener(self.marker,'mouseout', (this.setIcon(defaultIcon)));
 	};
 
 	// Contains all the locations and search function.

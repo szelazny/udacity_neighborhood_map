@@ -58,6 +58,19 @@ var Location = function(title, lng, lat, venueId, cat) {
 			self.infowindow.open(map,self.marker);
 		};
 
+	
+	
+	function highlightMarker(marker, highlight) {
+    var color = "#FE7569";
+    if (highlight) {
+        color = "#0000FF";
+    }
+    marker.setImage(getIcon(color).image);
+}
+	
+	
+	
+	
 		// Assigns a click event listener to the marker to open the info window.
 		this.addListener = google.maps.event.addListener(self.marker,'click', (this.openInfowindow));
 	        // Assigns a mouseover event listener to the marker t

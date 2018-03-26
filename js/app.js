@@ -72,7 +72,7 @@ var Location = function(title, lng, lat, venueId, cat) {
    
         color = "#0000FF";
   
-    marker.setImage(getIcon(color).image);
+    this.marker.setImage(getIcon(color).image);
 }	
 	
 	

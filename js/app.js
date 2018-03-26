@@ -60,19 +60,20 @@ var Location = function(title, lng, lat, venueId, cat) {
 
 	
 	
-function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
+//function toggleBounce() {
+//        if (marker.getAnimation() !== null) {
+//          marker.setAnimation(null);
+ //       } else {
+ //         marker.setAnimation(google.maps.Animation.BOUNCE);
+ //       }
 	
 	
 	
 		// Assigns a click event listener to the marker to open the info window.
 		this.addListener = google.maps.event.addListener(self.marker,'click', (this.openInfowindow));
 	        // Assigns a mouseover event listener to the marker t
-	this.addListener('click', toggleBounce);
+	       this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {alert('Made it to mouseover!');});
+
 
 		//this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {alert('Made it to mouseover!');});
 	       // this.addListener = google.maps.event.addListener(self.marker,'mouseout', highlightMarker(self.marker, unhighlight));

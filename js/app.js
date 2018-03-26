@@ -70,9 +70,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 	
 	function highlightMarker2() {
    
-        color = "#0000FF";
-  
-    self.marker.setImage(getIcon(color).image);
+        alert('Made it to HighlightMarker2!');
 }	
 	
 	

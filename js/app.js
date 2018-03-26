@@ -66,14 +66,17 @@ var Location = function(title, lng, lat, venueId, cat) {
  //       } else {
  //         marker.setAnimation(google.maps.Animation.BOUNCE);
  //       }
+function dostuff() {
 	
+	alert('Made it to do stuff!');
+}
 	
 	
 		// Assigns a click event listener to the marker to open the info window.
 		this.addListener = google.maps.event.addListener(self.marker,'click', (this.openInfowindow));
 	        // Assigns a mouseover event listener to the marker t
 	       //this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {alert('Made it to mouseover!');});
-                 this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {this.setAnimation(google.maps.Animation.BOUNCE);});
+                 this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {dostuff();});
 
 
 		//this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {alert('Made it to mouseover!');});

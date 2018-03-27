@@ -19,5 +19,5 @@ To view this interactive map on github pages go to https://szelazny.github.io/ud
 http://jquery.com/  
 http://knockoutjs.com/  
 https://developers.google.com/maps/  
-https://developer.foursquare.com/
+https://developer.foursquare.com/  
 http://github.hubspot.com/offline/docs/welcome/

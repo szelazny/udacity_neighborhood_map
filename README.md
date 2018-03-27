@@ -11,7 +11,7 @@ There is also an  instant search feature to allow the user to search for locatio
 
 To run this application, download all of the files and open the index.html file. You will need to be connected to the internet.
 
-To view this interactive map on github pages go to http://szelazny.github.io/udacity_neighborhood_map
+To view this interactive map on github pages go to https://szelazny.github.io/udacity_neighborhood_map
 
 
 ### References

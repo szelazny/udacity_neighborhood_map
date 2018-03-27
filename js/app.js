@@ -59,17 +59,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 		};
 
 	
-	
-//function toggleBounce() {
-//        if (marker.getAnimation() !== null) {
-//          marker.setAnimation(null);
- //       } else {
- //         marker.setAnimation(google.maps.Animation.BOUNCE);
- //       }
-//function dostuff() {
-//	
-//	alert('Made it to do stuff!');
-//}
+
 	
 	
 		// Assigns a click event listener to the marker to open the info window.
@@ -85,17 +75,7 @@ this.addListener = google.maps.event.addListener(self.marker,'mouseout', functio
 
 
 
-	
-	
-	//this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {    
- //        if (this.getAnimation() != null) {this.setAnimation(null);});
 
-
-	
-	
-	
-		//this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {alert('Made it to mouseover!');});
-	       // this.addListener = google.maps.event.addListener(self.marker,'mouseout', highlightMarker(self.marker, unhighlight));
 	};
 
 	// Contains all the locations and search function.

@@ -32,13 +32,13 @@ var Location = function(title, lng, lat, venueId, cat) {
 		// Assign marker icon color based on the category of the location.
 		switch (this.cat) {
 			case "Shopping":
-			this.icon = 'https://www.googlemapsmarkers.com/v1/009900/';
+			this.icon = 'http://www.googlemapsmarkers.com/v1/009900/';
 			break;
 			case "Food":
-			this.icon = 'https://www.googlemapsmarkers.com/v1/0099FF/';
+			this.icon = 'http://www.googlemapsmarkers.com/v1/0099FF/';
 			break;
 			default:
-			this.icon = 'https://www.googlemapsmarkers.com/v1/990000/';
+			this.icon = 'http://www.googlemapsmarkers.com/v1/990000/';
 		}
 		this.marker = new google.maps.Marker({
 			position: new google.maps.LatLng(self.lng, self.lat),

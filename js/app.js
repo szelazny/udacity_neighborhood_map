@@ -29,7 +29,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 
 		this.infowindow = new google.maps.InfoWindow();
 
-		// Assigns a marker icon color based on the category of the location.
+		// Assign marker icon color based on the category of the location.
 		switch (this.cat) {
 			case "Shopping":
 			this.icon = 'http://www.googlemapsmarkers.com/v1/009900/';
@@ -58,14 +58,14 @@ var Location = function(title, lng, lat, venueId, cat) {
 			self.infowindow.open(map,self.marker);
 		};
 
-		// Assigns a click event listener to the marker to open the info window.
+		// Assign a click event listener to the marker to open the info window.
 		this.addListener = google.maps.event.addListener(self.marker,'click', (this.openInfowindow));
-	        // Assigns a mouseover and mouseout event listener to the marker 
+	        // Assign a mouseover and a mouseout event listener to the marker 
                 this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {this.setAnimation(google.maps.Animation.BOUNCE);});
                 this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {this.setAnimation(google.maps.Animation.NULL);});
 		};
 
-	// Contains all the locations and search function.
+	// Contains all the locations and search function data.
 	var locationsModel = {
 
 		locations:[

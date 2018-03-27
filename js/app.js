@@ -1,4 +1,4 @@
-// Location Class completely builds everything needed for each location marker.
+// Location Class builds everything needed for each location marker.
 var Location = function(title, lng, lat, venueId, cat) {
 	var self = this;
 	this.title = title;
@@ -7,7 +7,7 @@ var Location = function(title, lng, lat, venueId, cat) {
 	this.venueId = venueId;
 	this.cat = cat;
 
-// getConetent function retrieves the five most recent tips from foursquare for the marker location.
+// getConetent function retrieves five most recent tips from foursquare for the marker location.
 	this.getContent = function() {
 		var topTips = [];
 		var venueUrl = 'https://api.foursquare.com/v2/venues/' + self.venueId + '/tips?sort=recent&limit=5&v=20150609&client_id=4EPS21I4V4MVCYXWDT4QNZZG1JETWZ2LIJMYQ34FNBWZ1RMV&client_secret=U3P1XLU204VMYO4BHGIWPDOY130Z1AFTT1OQTI2TY0HW0T43';
@@ -58,25 +58,12 @@ var Location = function(title, lng, lat, venueId, cat) {
 			self.infowindow.open(map,self.marker);
 		};
 
-	
-
-	
-	
 		// Assigns a click event listener to the marker to open the info window.
 		this.addListener = google.maps.event.addListener(self.marker,'click', (this.openInfowindow));
-	        // Assigns a mouseover event listener to the marker t
-	       //this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {alert('Made it to mouseover!');});
-               //  this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {dostuff();});
-this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {this.setAnimation(google.maps.Animation.BOUNCE);});
-//this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {this.setAnimation(none);});
-//this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {alert('Made it to mouseout!');});
-//this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {this.setAnimation(NULL);});
-this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {this.setAnimation(google.maps.Animation.NULL);});
-
-
-
-
-	};
+	        // Assigns a mouseover and mouseout event listener to the marker 
+                this.addListener = google.maps.event.addListener(self.marker,'mouseover', function() {this.setAnimation(google.maps.Animation.BOUNCE);});
+                this.addListener = google.maps.event.addListener(self.marker,'mouseout', function() {this.setAnimation(google.maps.Animation.NULL);});
+		};
 
 	// Contains all the locations and search function.
 	var locationsModel = {
